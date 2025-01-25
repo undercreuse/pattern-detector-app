@@ -26,11 +26,9 @@ const PatternDetector = () => {
     const gray = new cv.Mat();
     cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY);
     
-    // Logo detection
     const logo = new cv.Mat();
     cv.threshold(gray, logo, 127, 255, cv.THRESH_BINARY);
     
-    // Pattern detection
     const contours = new cv.MatVector();
     const hierarchy = new cv.Mat();
     cv.findContours(logo, contours, hierarchy, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
