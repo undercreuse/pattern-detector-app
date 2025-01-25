@@ -1,5 +1,6 @@
 import React from 'react';
 import PatternDetector from './components/PatternDetector';
+import './App.css';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           Pattern Detector
         </h1>
       </header>
-      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto py-6 px-4">
         <PatternDetector />
       </main>
     </div>
